@@ -1,0 +1,132 @@
+Fitter Route Stage Report for train_controller
+Thu Jan  5 10:33:31 2023
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Delay Chain Summary
+  3. Routing Usage Summary
+  4. Route Messages
+  5. Estimated Delay Added for Hold Timing Summary
+  6. Estimated Delay Added for Hold Timing Details
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Delay Chain Summary                                                                                                                                                 ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; Name               ; Pin Type ; Input Delay Chain 0 ; Output Delay Chain ; OE Delay Chain ; IO_12_LANE Input Data Delay Chain ; IO_12_LANE Input Strobe Delay Chain ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+; traffic_red        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; traffic_yellow     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; traffic_green      ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; pedestrian_red     ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; pedestrian_green   ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; train_red          ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; train_green        ; Output   ; --                  ; 0                  ; 0              ; --                                ; --                                  ;
+; reset              ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; clk                ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; button_pressed     ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; pedestrian_request ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
+; train_present      ; Input    ; 0                   ; --                 ; --             ; --                                ; --                                  ;
++--------------------+----------+---------------------+--------------------+----------------+-----------------------------------+-------------------------------------+
+
+
++-------------------------------------------------------+
+; Routing Usage Summary                                 ;
++------------------------------+------------------------+
+; Routing Resource Type        ; Usage                  ;
++------------------------------+------------------------+
+; Block interconnects          ; 26 / 664,374 ( < 1 % ) ;
+; C27 interconnects            ; 0 / 12,769 ( 0 % )     ;
+; C4 interconnects             ; 40 / 514,392 ( < 1 % ) ;
+; Direct links                 ; 4 / 664,374 ( < 1 % )  ;
+; Global clocks                ; 1 / 32 ( 3 % )         ;
+; Periphery clocks             ; 0 / 410 ( 0 % )        ;
+; R3 interconnects             ; 12 / 246,936 ( < 1 % ) ;
+; R32 interconnects            ; 0 / 28,257 ( 0 % )     ;
+; R32/C27 interconnect drivers ; 0 / 74,920 ( 0 % )     ;
+; R6 interconnects             ; 13 / 527,108 ( < 1 % ) ;
+; Regional clock lefts         ; 0 / 8 ( 0 % )          ;
+; Regional clock out bottoms   ; 0 / 8 ( 0 % )          ;
+; Regional clock out tops      ; 0 / 8 ( 0 % )          ;
+; Regional clock rights        ; 0 / 8 ( 0 % )          ;
+; Regional clocks              ; 0 / 8 ( 0 % )          ;
+; Spine buffers                ; 1 / 220 ( < 1 % )      ;
+; Spine clocks                 ; 1 / 330 ( < 1 % )      ;
+; Spine feedthroughs           ; 0 / 224 ( 0 % )        ;
++------------------------------+------------------------+
+
+
++----------------+
+; Route Messages ;
++----------------+
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info: *******************************************************************
+Info: Running Quartus Prime Fitter
+    Info: Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+    Info: Processing started: Thu Jan  5 10:31:35 2023
+    Info: System process ID: 48326
+Info: Command: quartus_fit --read_settings_files=on --write_settings_files=off train_controller -c train_controller
+Info: qfit2_default_script.tcl version: #1
+Info: Project  = train_controller
+Info: Revision = train_controller
+Info (170193): Fitter routing operations beginning
+Info (170199): The Fitter performed an Auto Fit compilation.  Optimizations were skipped to reduce compilation time.
+    Info (170201): Optimizations that may affect the design's routability were skipped
+    Info (170200): Optimizations that may affect the design's timing were skipped
+Info (11888): Total time spent on timing analysis during Routing is 0.04 seconds.
+Info (16607): Fitter routing operations ending: elapsed time is 00:00:23
+
+
++------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Summary              ;
++-----------------+----------------------+-------------------+
+; Source Clock(s) ; Destination Clock(s) ; Delay Added in ns ;
++-----------------+----------------------+-------------------+
+; clk             ; clk                  ; 2.6               ;
++-----------------+----------------------+-------------------+
+Note: For more information on problematic transfers, consider running the Fitter again with the Optimize hold timing option (Settings Menu) turned off.
+This will disable optimization of problematic paths and expose them for further analysis using the Timing Analyzer.
+
+
++-----------------------------------------------------------------------------------------------------+
+; Estimated Delay Added for Hold Timing Details                                                       ;
++----------------------------------------+----------------------------------------+-------------------+
+; Source Register                        ; Destination Register                   ; Delay Added in ns ;
++----------------------------------------+----------------------------------------+-------------------+
+; traffic_lights_inst|state.yellow       ; traffic_lights_inst|state.red          ; 0.267             ;
+; traffic_lights_inst|state.green        ; traffic_lights_inst|state.yellow       ; 0.253             ;
+; traffic_lights_inst|state.train_yellow ; traffic_lights_inst|state.red          ; 0.251             ;
+; pedestrian_crossing_inst|state.waiting ; pedestrian_crossing_inst|state.red     ; 0.248             ;
+; traffic_lights_inst|state.red          ; pedestrian_crossing_inst|state.green   ; 0.237             ;
+; pedestrian_crossing_inst|state.red     ; pedestrian_crossing_inst|state.green   ; 0.219             ;
+; traffic_lights_inst|state.train_red    ; traffic_lights_inst|state.train_yellow ; 0.209             ;
+; pedestrian_crossing_inst|state.green   ; pedestrian_crossing_inst|state.green   ; 0.172             ;
++----------------------------------------+----------------------------------------+-------------------+
+Note: This table only shows the top 8 path(s) that have the largest delay added for hold.
+
+

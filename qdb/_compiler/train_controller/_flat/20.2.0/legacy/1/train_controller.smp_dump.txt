@@ -1,0 +1,16 @@
+
+State Machine - traffic_lights_inst|state
+Name state.train_yellow state.train_red state.green state.yellow state.red 
+state.red 0 0 0 0 0 
+state.yellow 0 0 0 1 1 
+state.green 0 0 1 0 1 
+state.train_red 0 1 0 0 1 
+state.train_yellow 1 0 0 0 1 
+
+State Machine - pedestrian_crossing_inst|state
+Name state.waiting state.green state.red 
+state.red 0 0 0 
+state.green 0 1 1 
+state.waiting 1 0 1 
+
+State Machine - Summary

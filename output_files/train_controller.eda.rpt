@@ -1,0 +1,92 @@
+EDA Netlist Writer report for train_controller
+Thu Jan  5 10:35:11 2023
+Quartus Prime Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. EDA Netlist Writer Summary
+  3. EDA Netlist Writer Messages
+  4. Simulation Settings
+  5. Simulation Generated Files
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 2020  Intel Corporation. All rights reserved.
+Your use of Intel Corporation's design tools, logic functions 
+and other software and tools, and any partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Intel Program License 
+Subscription Agreement, the Intel Quartus Prime License Agreement,
+the Intel FPGA IP License Agreement, or other applicable license
+agreement, including, without limitation, that your use is for
+the sole purpose of programming logic devices manufactured by
+Intel and sold by Intel or its authorized distributors.  Please
+refer to the applicable agreement for further details, at
+https://fpgasoftware.intel.com/eula.
+
+
+
++-------------------------------------------------------------------+
+; EDA Netlist Writer Summary                                        ;
++---------------------------+---------------------------------------+
+; EDA Netlist Writer Status ; Successful - Thu Jan  5 10:35:11 2023 ;
+; Revision Name             ; train_controller                      ;
+; Top-level Entity Name     ; train_crossing_system                 ;
+; Family                    ; Cyclone 10 GX                         ;
+; Simulation Files Creation ; Successful                            ;
++---------------------------+---------------------------------------+
+
+
++-----------------------------+
+; EDA Netlist Writer Messages ;
++-----------------------------+
+Info: *******************************************************************
+Info: Running Quartus Prime EDA Netlist Writer
+    Info: Version 20.2.0 Build 50 06/11/2020 SC Pro Edition
+    Info: Processing started: Thu Jan  5 10:35:04 2023
+    Info: System process ID: 49493
+Info: Command: quartus_eda --read_settings_files=on --write_settings_files=off train_controller -c train_controller
+Info (16677): Loading final database.
+Info (16734): Loading "final" snapshot for partition "root_partition".
+Info (16678): Successfully loaded final database: elapsed time is 00:00:05.
+Info (204019): Generated file train_controller.vho in folder "/global/vcs_lk01/umair/rtl_design/prj/0-nadhira/simulation/modelsim/" for EDA simulation tool
+Info: Quartus Prime EDA Netlist Writer was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 1653 megabytes
+    Info: Processing ended: Thu Jan  5 10:35:11 2023
+    Info: Elapsed time: 00:00:07
+    Info: System process ID: 49493
+
+
++---------------------------------------------------------------------------+
+; Simulation Settings                                                       ;
++--------------------------------------------------+------------------------+
+; Option                                           ; Setting                ;
++--------------------------------------------------+------------------------+
+; Tool Name                                        ; ModelSim-Altera (VHDL) ;
+; Truncate long hierarchy paths                    ; Off                    ;
+; Map illegal HDL characters                       ; Off                    ;
+; Flatten buses into individual nodes              ; Off                    ;
+; Bring out device-wide set/reset signals as ports ; Off                    ;
+; Do not write top level VHDL entity               ; Off                    ;
+; Architecture name in VHDL output netlist         ; structure              ;
++--------------------------------------------------+------------------------+
+
+
++---------------------------------------------------------------------------------------------------+
+; Simulation Generated Files                                                                        ;
++---------------------------------------------------------------------------------------------------+
+; Generated Files                                                                                   ;
++---------------------------------------------------------------------------------------------------+
+; /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/simulation/modelsim/train_controller_modelsim.xrf ;
+; /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/simulation/modelsim/train_controller.vho          ;
++---------------------------------------------------------------------------------------------------+
+
+

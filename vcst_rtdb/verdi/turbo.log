@@ -1,0 +1,3 @@
+Command Line: /global/apps/vcstatic_2022.06-SP2/verdi/platform/LINUXAMD64/bin/Novas -nologo -preTitle VCst -guiConf /global/apps/vcstatic_2022.06-SP2/auxx/monet/tcl/verdi.conf -logdir /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/verdi -serverPort 14253 -tkName VCST -play /global/apps/vcstatic_2022.06-SP2/auxx/monet/tcl/verdi_vcst.tcl  -lca
+uname(Linux us01odcvde39701 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64)
+au time 121.884450 10.661438 2.305599 delta 231264256 231264256 total 788439040 788439040

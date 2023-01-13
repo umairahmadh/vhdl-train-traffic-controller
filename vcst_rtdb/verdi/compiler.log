@@ -1,0 +1,14 @@
+*design* DebussyLib (btIdent Verdi_T-2022.06-SP2)
+Command arguments:  -elab  /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/.internal/design/train_crossing_system.exe.daidir/kdb.elab++ 
+-- Loading package STANDARD.
+-- Loading package std_logic_1164.
+-- Loading entity train_crossing_system.
+-- Loading architecture behavioral of train_crossing_system.
+-- Loading entity traffic_lights.
+-- Loading architecture behavioral of traffic_lights.
+-- Loading entity pedestrian_crossing.
+-- Loading architecture behavioral of pedestrian_crossing.
+-- Loading entity train_lights.
+-- Loading architecture behavioral of train_lights.
+-- Loading package body std_logic_1164.
+Total	0 error(s),   0 warning(s)

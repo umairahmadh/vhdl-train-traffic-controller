@@ -1,0 +1,7 @@
+Command Line: /global/apps/vcstatic_2022.06-SP2/vcs-mx/linux64/bin/elabcom -simvdaidir /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/.internal/design/train_crossing_system.exe.daidir -elab /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/.internal/design/train_crossing_system.exe.daidir/kdb -simflow -topfile /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/.internal/design/train_crossing_system.exe.daidir/.elabcomTopFile -logdir /global/vcs_lk01/umair/rtl_design/prj/0-nadhira/vcst_rtdb/verdi/elabcomLog -Xprefer_tech_lib -ssy -ssv -ssz -silent +disable_message+C00373 +disable_message+C00371 +disable_message+C00388+C00389
+uname(Linux us01odcvde39701 3.10.0-1160.31.1.el7.x86_64 #1 SMP Thu Jun 10 13:32:12 UTC 2021 x86_64)
+[INFO] error/warning message 'C00373' has been suppressed.
+[INFO] error/warning message 'C00371' has been suppressed.
+failed to find /global/apps/vcstatic_2022.06-SP2/vcs-mx/linux64/packages/IEEE/lib/work.lib++/AbsDocNameTbl
+failed to find /global/apps/vcstatic_2022.06-SP2/vcs-mx/linux64/packages/STD/lib/work.lib++/AbsDocNameTbl
+au time 0.419093 0.042847 0.064089 delta 86827008 86827008 total 278990848 278990848

@@ -1,0 +1,6 @@
+
+set TOP train_crossing_system
+analyze -format vhdl { -f filelist.f }  
+
+elaborate ${TOP} 
+view_schematic
